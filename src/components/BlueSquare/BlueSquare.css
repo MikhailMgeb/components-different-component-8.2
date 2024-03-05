@@ -1,0 +1,26 @@
+.BlueSquare {
+    width: 100%;
+}
+
+.BlueSquare-Square {
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+.BlueSquare-Square_variance_position {
+    background-color: brown;
+}
+
+.BlueSquare-Square_color_red {
+    animation: slideRight 3s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(1179px);
+    }
+  }
