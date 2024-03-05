@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { BlueSquare } from './components/BlueSquare/BlueSquare';
-import { ImpudentInput } from './components/ImpudentInput/ImpudentInput';
+import { EmotionalButton } from './components/EmotionalButton/EmotionalButton';
 
 import './App.css';
-
 
 
 const App = () => {
   return (
     <div className="App">
-      {/* <BlueSquare /> */}
-      <ImpudentInput />
+      <EmotionalButton />
+      <EmotionalButton />
+      <EmotionalButton />
+      <EmotionalButton />
     </div>
   );
 }
