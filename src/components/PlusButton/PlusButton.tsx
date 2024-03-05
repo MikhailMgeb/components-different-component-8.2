@@ -3,8 +3,6 @@ import type { ChangeEvent, MouseEvent } from 'react';
 
 import { cnPlusButton } from './PlusButton.classname';
 
-import './PlusButton.css';
-
 const PlusButton = () => {
     const [value, setValue] = useState(0);
     const [diff, setDiff] = useState(0);
