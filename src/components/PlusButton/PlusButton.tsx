@@ -17,7 +17,7 @@ const PlusButton = () => {
         setValue(+target.value);
     }
 
-    function handleClick(event: MouseEvent) {
+    function handleClick() {
         setDiff((prev) => prev + value);
     }
 
