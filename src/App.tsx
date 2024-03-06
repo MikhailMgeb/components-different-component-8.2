@@ -4,12 +4,12 @@ import { EmotionalButton } from './components/EmotionalButton/EmotionalButton';
 
 import './App.css';
 
-
+const emojis = ['😑', '😗', '😚', '🙂', '😅', '😆', '😂', '🤣', '🫢', '😶‍🌫️', '💥'];
 
 const App = () => {
   return (
     <div className="App">
-      <EmotionalButton />
+      <EmotionalButton emojis={emojis}/>
     </div>
   );
 }
