@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { ChangeEvent, MouseEvent } from 'react';
+import type { ChangeEvent } from 'react';
 
 import { cnPlusButton } from './PlusButton.classname';
 

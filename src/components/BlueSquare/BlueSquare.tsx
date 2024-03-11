@@ -8,11 +8,7 @@ const BlueSquare = () => {
     const [option, setOption] = useState(false);
 
     const handleClick = () => {
-        if (option === false) {
-            setOption(true);
-            return
-        }
-        setOption(false);
+        setOption(!option);
     }
 
     return (
