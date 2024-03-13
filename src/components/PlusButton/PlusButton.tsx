@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { ChangeEvent, MouseEvent } from 'react';
+import type { ChangeEvent } from 'react';
 
 import { cnPlusButton } from './PlusButton.classname';
 
@@ -17,7 +17,7 @@ const PlusButton = () => {
         setValue(+target.value);
     }
 
-    function handleClick(event: MouseEvent) {
+    function handleClick() {
         setDiff((prev) => prev + value);
     }
 

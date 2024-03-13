@@ -4,19 +4,15 @@ import { cnBlueSquare } from './BlueSquare.classname';
 
 import './BlueSquare.css';
 
-
 const BlueSquare = () => {
-    const [variance, setVariance] = useState('');
-    const [color, setColor] = useState('');
+    const [option, setOption] = useState(false);
 
-    const handleClick = () => {
-        setVariance('position');
-        setColor('red');
+    const handleChangePosition = () => {
+        setOption(prev => !prev);
     }
 
     return (
-        <div className={cnBlueSquare()}>
-            <div className={cnBlueSquare('Square', { variance, color })} onClick={handleClick}></div>
+        <div className={cnBlueSquare('Square', { position: option, color: option })} onClick={handleChangePosition}>
         </div >
     );
 }
