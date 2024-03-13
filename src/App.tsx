@@ -7,15 +7,12 @@ import { PlusButton } from './components/PlusButton/PlusButton';
 
 import './App.css';
 
-
-
-
 const emojis = ['😑', '😗', '😚', '🙂', '😅', '😆', '😂', '🤣', '🫢', '😶‍🌫️', '💥'];
 
 const App = () => {
   return (
     <div className="App">
-      {/* <BlueSquare /> */}
+      <BlueSquare />
       <ImpudentInput limitSymbols={10} />
     </div>
   );

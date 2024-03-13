@@ -7,13 +7,12 @@ import './BlueSquare.css';
 const BlueSquare = () => {
     const [option, setOption] = useState(false);
 
-    const handleClick = () => {
-        setOption(!option);
+    const handleChangePosition = () => {
+        setOption(prev => !prev);
     }
 
     return (
-        <div className={cnBlueSquare('Square', { position: option, red: option })} onClick={handleClick}>
-
+        <div className={cnBlueSquare('Square', { position: option, color: option })} onClick={handleChangePosition}>
         </div >
     );
 }
